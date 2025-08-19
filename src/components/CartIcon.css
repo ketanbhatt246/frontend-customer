@@ -1,0 +1,29 @@
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #111;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.cart-icon span {
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+@keyframes cartShake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  50% { transform: translateX(4px); }
+  75% { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.cart-icon.shake {
+  animation: cartShake 0.4s ease;
+}

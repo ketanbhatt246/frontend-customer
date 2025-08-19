@@ -1,0 +1,51 @@
+/* src/pages/OrderSuccessPage.css */
+
+.order-success-container {
+  text-align: center;
+  padding: 60px 20px;
+  animation: fadeInUp 0.6s ease-out;
+  background-color: #f0fdf4;
+  min-height: 80vh;
+}
+
+.order-success-container h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.order-success-container p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.order-success-container strong {
+  color: #1b5e20;
+}
+
+.order-success-container a {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background-color: #388e3c;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.order-success-container a:hover {
+  background-color: #2e7d32;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

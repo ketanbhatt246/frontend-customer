@@ -1,0 +1,54 @@
+/* src/pages/CategoryPage.css */
+
+.category-page {
+  padding: 40px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease;
+}
+
+.category-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.subcategory-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.subcategory-card {
+  padding: 20px;
+  min-width: 150px;
+  text-align: center;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.subcategory-card:hover {
+  transform: scale(1.08);
+  background: #ffe9b1;
+  color: #000;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Optional subtle entrance animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
